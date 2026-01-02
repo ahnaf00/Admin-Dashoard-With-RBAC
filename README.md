@@ -1,59 +1,94 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# E-Com Admin Dashboard
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A professional, high-performance admin dashboard built with Laravel 11, featuring advanced Role-Based Access Control (RBAC), sleek UI enhancements, and robust authentication.
 
-## About Laravel
+## 🚀 Key Features
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- **Advanced RBAC Management**:
+  - Full CRUD for Roles and Privileges.
+  - Granular permission assignment.
+  - Exclusive **Super Admin** restricted access to high-level management routes.
+  - Conditional sidebar navigation based on user roles and permissions.
+- **Enhanced Security**:
+  - Custom `SuperAdminMiddleware` for iron-clad route protection.
+  - Functional Logout system with secure CSRF protection and configurable redirects.
+  - Automated session invalidation on logout.
+- **Sleek & Professional UI**:
+  - Based on **Argon Dashboard 3 PRO** with deep custom refinements.
+  - **Modern Typography**: Integrated **Inter** Google Font for superior readability and professional aesthetic.
+  - **Refined Styling**: Reduced border-radius (sharper look), enhanced shadows, and subtle micro-animations.
+  - Responsive design optimized for all screen sizes.
+- **User Management**: Efficiently manage user roles and permissions from a centralized interface.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🛠️ Tech Stack
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **Framework**: [Laravel 11](https://laravel.com)
+- **Authentication**: [Tyro Login](https://github.com/hasinhayder/tyro-login)
+- **Role-Based Access Control**: [Tyro RBAC](https://github.com/hasinhayder/tyro)
+- **Frontend Framework**: Bootstrap 5 (via Argon Dashboard)
+- **Font**: Inter (Custom Integrated)
+- **Icons**: Font Awesome & Nucleo Icons
 
-## Learning Laravel
+## ⚙️ Installation
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/ahnaf00/Admin-Dashoard-With-RBAC.git
+   cd Admin-Dashoard-With-RBAC
+   ```
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+2. **Install dependencies**:
+   ```bash
+   composer install
+   npm install
+   ```
 
-## Laravel Sponsors
+3. **Configure Environment**:
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+4. **Database Setup**:
+   - Update your `.env` with your database credentials.
+   - Run migrations and seeders:
+     ```bash
+     php artisan migrate --seed
+     ```
 
-### Premium Partners
+5. **Build Assets**:
+   - For development:
+     ```bash
+     npm run dev
+     ```
+   - For production:
+     ```bash
+     npm run build
+     ```
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+6. **Start the server**:
+   ```bash
+   php artisan serve
+   ```
 
-## Contributing
+## 🔒 Configuration
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Redirect Paths
+Configure your redirect paths in `config/tyro-login.php` or via `.env`:
+- `TYRO_LOGIN_REDIRECT_AFTER_LOGIN=/dashboard`
+- `TYRO_LOGIN_REDIRECT_AFTER_LOGOUT=/`
 
-## Code of Conduct
+### Super Admin Role
+The system identifies the **Super Admin** using the `super-admin` role slug. Ensure the default seeder creates this role for full access.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 📝 Customization
 
-## Security Vulnerabilities
+### Border Radius
+To adjust the sharper look, modify the `--radius-*` variables in `resources/views/Backend/layouts/inc/style.blade.php`.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### Typography
+The project uses **Inter** font as the primary typeface. You can customize the scale and weights in the custom styling section of the layout.
 
-## License
+## 📄 License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
