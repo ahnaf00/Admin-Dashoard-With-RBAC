@@ -26,7 +26,7 @@
                 <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Management</h6>
             </li>
 
-            @if(auth()->user()?->hasRole('super-admin'))
+            @if(auth()->user()?->hasRole(config('tyro_custom.super_admin_role', 'super-admin')))
                 <li class="nav-item">
                     <a data-bs-toggle="collapse" href="#rolesExamples" class="nav-link" aria-controls="rolesExamples"
                         role="button" aria-expanded="false">
@@ -55,7 +55,7 @@
                 </li>
             @endif
 
-            @if(auth()->user()?->hasRole('super-admin'))
+            @if(auth()->user()?->hasRole(config('tyro_custom.super_admin_role', 'super-admin')))
                 <li class="nav-item">
                     <a data-bs-toggle="collapse" href="#rbacManagement" class="nav-link" aria-controls="rbacManagement"
                         role="button" aria-expanded="false">

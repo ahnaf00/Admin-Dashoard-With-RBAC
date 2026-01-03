@@ -52,7 +52,14 @@
                                                 data-original-title="Edit role">
                                                 Edit
                                             </a>
-                                            @if(!in_array($role->slug, ['super-admin', 'admin', 'user']))
+                                            @php
+                                                $protectedRoles = [
+                                                    config('tyro_custom.super_admin_role', 'super-admin'),
+                                                    config('tyro_custom.admin_role', 'admin'),
+                                                    config('tyro_custom.user_role', 'user'),
+                                                ];
+                                            @endphp
+                                            @if(!in_array($role->slug, $protectedRoles))
                                                 <form action="{{ route('roles.destroy', $role->id) }}" method="POST"
                                                     class="d-inline ms-2">
                                                     @csrf

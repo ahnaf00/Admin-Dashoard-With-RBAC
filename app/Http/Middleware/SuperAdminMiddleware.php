@@ -15,7 +15,9 @@ class SuperAdminMiddleware
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if (!$request->user() || !$request->user()->hasRole('super-admin')) {
+        $superAdminRole = config('tyro_custom.super_admin_role', 'super-admin');
+
+        if (!$request->user() || !$request->user()->hasRole($superAdminRole)) {
             abort(403, 'Unauthorized. Only Super Admin can access this area.');
         }
 

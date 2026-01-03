@@ -73,8 +73,14 @@ class RoleController extends Controller
 
     public function destroy(Role $role)
     {
+        $protectedRoles = [
+            config('tyro_custom.super_admin_role', 'super-admin'),
+            config('tyro_custom.admin_role', 'admin'),
+            config('tyro_custom.user_role', 'user'),
+        ];
+
         // Prevent deleting protected roles if needed
-        if (in_array($role->slug, ['super-admin', 'admin', 'user'])) {
+        if (in_array($role->slug, $protectedRoles)) {
             return redirect()->back()->with('error', 'Protected roles cannot be deleted.');
         }
 

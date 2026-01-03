@@ -1,6 +1,6 @@
 # E-Com Admin Dashboard
 
-A professional, high-performance admin dashboard built with Laravel 11, featuring advanced Role-Based Access Control (RBAC), sleek UI enhancements, and robust authentication.
+A professional, high-performance admin dashboard built with Laravel 12, featuring advanced Role-Based Access Control (RBAC), sleek UI enhancements, and robust authentication.
 
 ## 🚀 Key Features
 
@@ -22,12 +22,10 @@ A professional, high-performance admin dashboard built with Laravel 11, featurin
 
 ## 🛠️ Tech Stack
 
-- **Framework**: [Laravel 11](https://laravel.com)
+- **Framework**: [Laravel 12](https://laravel.com)
 - **Authentication**: [Tyro Login](https://github.com/hasinhayder/tyro-login)
 - **Role-Based Access Control**: [Tyro RBAC](https://github.com/hasinhayder/tyro)
-- **Frontend Framework**: Bootstrap 5 (via Argon Dashboard)
-- **Font**: Inter (Custom Integrated)
-- **Icons**: Font Awesome & Nucleo Icons
+
 
 ## ⚙️ Installation
 
@@ -78,16 +76,14 @@ Configure your redirect paths in `config/tyro-login.php` or via `.env`:
 - `TYRO_LOGIN_REDIRECT_AFTER_LOGIN=/dashboard`
 - `TYRO_LOGIN_REDIRECT_AFTER_LOGOUT=/`
 
-### Super Admin Role
-The system identifies the **Super Admin** using the `super-admin` role slug. Ensure the default seeder creates this role for full access.
+### Role Configuration
+The project uses a configuration-driven approach for core roles. You can customize the role slugs via the `SUPER_ADMIN_ROLE`, `ADMIN_ROLE`, `EDITOR_ROLE`, and `USER_ROLE` environment variables or by modifying `config/tyro_custom.php`.
 
-## 📝 Customization
+- **Super Admin**: High-level management access.
+- **Admin**: Standard administrative access.
+- **Editor**: Content management access.
+- **User**: Standard user access.
 
-### Border Radius
-To adjust the sharper look, modify the `--radius-*` variables in `resources/views/Backend/layouts/inc/style.blade.php`.
-
-### Typography
-The project uses **Inter** font as the primary typeface. You can customize the scale and weights in the custom styling section of the layout.
 
 ## 📄 License
 
