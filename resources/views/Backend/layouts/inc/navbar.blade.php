@@ -14,9 +14,10 @@
                 <li class="breadcrumb-item text-sm">
                     <a class="text-white opacity-5" href="javascript:;">Pages</a>
                 </li>
-                <li class="breadcrumb-item text-sm text-white active" aria-current="page">Dashboard</li>
+                <li class="breadcrumb-item text-sm text-white active" aria-current="page">{{ $title ?? 'Dashboard' }}
+                </li>
             </ol>
-            <h6 class="font-weight-bolder mb-0 text-white">Dashboard Overview</h6>
+            <h6 class="font-weight-bolder mb-0 text-white">{{ $header ?? ($title ?? 'Dashboard Overview') }}</h6>
         </nav>
         <div class="sidenav-toggler sidenav-toggler-inner d-xl-block d-none ">
             <a href="javascript:;" class="nav-link p-0">

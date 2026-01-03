@@ -9,7 +9,7 @@
                     <div class="row">
                         <div class="col-8">
                             <div class="numbers text-white">
-                                <p class="text-white text-sm mb-0 text-uppercase font-weight-bold opacity-7">Today's Money
+                                <p class="text-white text-sm mb-0 text-uppercase font-weight-bold opacity-7">Total Revenue
                                 </p>
                                 <h5 class="text-white font-weight-bolder mb-0">
                                     $53,000
@@ -35,7 +35,7 @@
                     <div class="row">
                         <div class="col-8">
                             <div class="numbers">
-                                <p class="text-sm mb-0 text-uppercase font-weight-bold">Today's Users</p>
+                                <p class="text-sm mb-0 text-uppercase font-weight-bold">Active Users</p>
                                 <h5 class="font-weight-bolder mb-0">
                                     2,300
                                 </h5>
@@ -47,7 +47,7 @@
                         </div>
                         <div class="col-4 text-end">
                             <div class="icon icon-shape bg-gradient-danger shadow-danger text-center border-radius-md">
-                                <i class="ni ni-world text-lg opacity-10" aria-hidden="true"></i>
+                                <i class="ni ni-single-02 text-lg opacity-10" aria-hidden="true"></i>
                             </div>
                         </div>
                     </div>
@@ -60,19 +60,19 @@
                     <div class="row">
                         <div class="col-8">
                             <div class="numbers">
-                                <p class="text-sm mb-0 text-uppercase font-weight-bold">New Clients</p>
+                                <p class="text-sm mb-0 text-uppercase font-weight-bold">Performance</p>
                                 <h5 class="font-weight-bolder mb-0">
-                                    +3,462
+                                    98.5%
                                 </h5>
                                 <p class="mt-2 mb-0">
-                                    <span class="text-danger text-sm font-weight-bolder">-2%</span>
-                                    <span class="text-secondary text-xs">since last quarter</span>
+                                    <span class="text-success text-sm font-weight-bolder">+1.2%</span>
+                                    <span class="text-secondary text-xs">system uptime</span>
                                 </p>
                             </div>
                         </div>
                         <div class="col-4 text-end">
                             <div class="icon icon-shape bg-gradient-success shadow-success text-center border-radius-md">
-                                <i class="ni ni-paper-diploma text-lg opacity-10" aria-hidden="true"></i>
+                                <i class="ni ni-settings-gear-65 text-lg opacity-10" aria-hidden="true"></i>
                             </div>
                         </div>
                     </div>
@@ -85,9 +85,9 @@
                     <div class="row">
                         <div class="col-8">
                             <div class="numbers">
-                                <p class="text-sm mb-0 text-uppercase font-weight-bold">Sales</p>
+                                <p class="text-sm mb-0 text-uppercase font-weight-bold">Total Requests</p>
                                 <h5 class="font-weight-bolder mb-0">
-                                    $103,430
+                                    103,430
                                 </h5>
                                 <p class="mt-2 mb-0">
                                     <span class="text-success text-sm font-weight-bolder">+5%</span>
@@ -97,7 +97,7 @@
                         </div>
                         <div class="col-4 text-end">
                             <div class="icon icon-shape bg-gradient-warning shadow-warning text-center border-radius-md">
-                                <i class="ni ni-cart text-lg opacity-10" aria-hidden="true"></i>
+                                <i class="ni ni-active-40 text-lg opacity-10" aria-hidden="true"></i>
                             </div>
                         </div>
                     </div>
@@ -111,10 +111,10 @@
         <div class="col-lg-7 mb-lg-0 mb-4">
             <div class="card z-index-2 h-100">
                 <div class="card-header pb-0 pt-3 bg-transparent">
-                    <h6 class="text-capitalize">Sales overview</h6>
+                    <h6 class="text-capitalize">System Performance</h6>
                     <p class="text-sm mb-0">
                         <i class="fa fa-arrow-up text-success"></i>
-                        <span class="font-weight-bold">4% more</span> in 2021
+                        <span class="font-weight-bold">4% more</span> in current month
                     </p>
                 </div>
                 <div class="card-body p-3">
@@ -181,7 +181,7 @@
             <div class="card">
                 <div class="card-header pb-0 p-3">
                     <div class="d-flex justify-content-between">
-                        <h6 class="mb-2">Recent Sales</h6>
+                        <h6 class="mb-2">Recent Activities</h6>
                     </div>
                 </div>
                 <div class="table-responsive">
@@ -190,62 +190,60 @@
                             <tr>
                                 <td class="w-30">
                                     <div class="d-flex px-2 py-1 align-items-center">
-                                        <div>
-                                            <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/chair-pink.jpg"
-                                                class="avatar avatar-sm me-3" alt="item">
+                                        <div class="icon icon-shape icon-sm me-3 bg-gradient-info shadow text-center">
+                                            <i class="ni ni-bell-55 text-white opacity-10"></i>
                                         </div>
                                         <div class="d-flex flex-column justify-content-center">
-                                            <h6 class="mb-0 text-sm">Velvet Chair</h6>
+                                            <h6 class="mb-0 text-sm">System Update</h6>
                                         </div>
                                     </div>
                                 </td>
                                 <td>
                                     <div class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0">Sales:</p>
-                                        <h6 class="text-sm mb-0">2.500</h6>
+                                        <p class="text-xs font-weight-bold mb-0">Status:</p>
+                                        <h6 class="text-sm mb-0">Completed</h6>
                                     </div>
                                 </td>
                                 <td>
                                     <div class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0">Value:</p>
-                                        <h6 class="text-sm mb-0">$230,900</h6>
+                                        <p class="text-xs font-weight-bold mb-0">User:</p>
+                                        <h6 class="text-sm mb-0">Admin</h6>
                                     </div>
                                 </td>
                                 <td class="align-middle text-sm">
                                     <div class="col text-center">
-                                        <p class="text-xs font-weight-bold mb-0">Growth:</p>
-                                        <h6 class="text-sm mb-0">29.9%</h6>
+                                        <p class="text-xs font-weight-bold mb-0">Time:</p>
+                                        <h6 class="text-sm mb-0">2 mins ago</h6>
                                     </div>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="w-30">
                                     <div class="d-flex px-2 py-1 align-items-center">
-                                        <div>
-                                            <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/ecommerce/black-chair.jpg"
-                                                class="avatar avatar-sm me-3" alt="item">
+                                        <div class="icon icon-shape icon-sm me-3 bg-gradient-success shadow text-center">
+                                            <i class="ni ni-check-bold text-white opacity-10"></i>
                                         </div>
                                         <div class="d-flex flex-column justify-content-center">
-                                            <h6 class="mb-0 text-sm">Black Chair</h6>
+                                            <h6 class="mb-0 text-sm">New User Registered</h6>
                                         </div>
                                     </div>
                                 </td>
                                 <td>
                                     <div class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0">Sales:</p>
-                                        <h6 class="text-sm mb-0">3.900</h6>
+                                        <p class="text-xs font-weight-bold mb-0">Status:</p>
+                                        <h6 class="text-sm mb-0">Success</h6>
                                     </div>
                                 </td>
                                 <td>
                                     <div class="text-center">
-                                        <p class="text-xs font-weight-bold mb-0">Value:</p>
-                                        <h6 class="text-sm mb-0">$440,000</h6>
+                                        <p class="text-xs font-weight-bold mb-0">User:</p>
+                                        <h6 class="text-sm mb-0">System</h6>
                                     </div>
                                 </td>
                                 <td class="align-middle text-sm">
                                     <div class="col text-center">
-                                        <p class="text-xs font-weight-bold mb-0">Growth:</p>
-                                        <h6 class="text-sm mb-0">40.22%</h6>
+                                        <p class="text-xs font-weight-bold mb-0">Time:</p>
+                                        <h6 class="text-sm mb-0">15 mins ago</h6>
                                     </div>
                                 </td>
                             </tr>
@@ -288,19 +286,34 @@
         <div class="col-lg-4">
             <div class="card">
                 <div class="card-header pb-0 p-3">
-                    <h6 class="mb-0">Categories</h6>
+                    <h6 class="mb-0">System Quick Actions</h6>
                 </div>
                 <div class="card-body p-3">
                     <ul class="list-group">
                         <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
                             <div class="d-flex align-items-center">
                                 <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
-                                    <i class="ni ni-mobile-button text-white opacity-10"></i>
+                                    <i class="ni ni-single-02 text-white opacity-10"></i>
                                 </div>
                                 <div class="d-flex flex-column">
-                                    <h6 class="mb-1 text-dark text-sm">Devices</h6>
-                                    <span class="text-xs">250 in stock, <span class="font-weight-bold">346+
-                                            sold</span></span>
+                                    <h6 class="mb-1 text-dark text-sm">User Management</h6>
+                                    <span class="text-xs">Manage roles and permissions</span>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <a href="{{ route('users.index') }}"
+                                    class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto"><i
+                                        class="ni ni-bold-right" aria-hidden="true"></i></a>
+                            </div>
+                        </li>
+                        <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
+                            <div class="d-flex align-items-center">
+                                <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
+                                    <i class="ni ni-settings text-white opacity-10"></i>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <h6 class="mb-1 text-dark text-sm">System Settings</h6>
+                                    <span class="text-xs">Configure application defaults</span>
                                 </div>
                             </div>
                             <div class="d-flex">
@@ -312,28 +325,11 @@
                         <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
                             <div class="d-flex align-items-center">
                                 <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
-                                    <i class="ni ni-tag text-white opacity-10"></i>
+                                    <i class="ni ni-folder-17 text-white opacity-10"></i>
                                 </div>
                                 <div class="d-flex flex-column">
-                                    <h6 class="mb-1 text-dark text-sm">Tickets</h6>
-                                    <span class="text-xs">123 closed, <span class="font-weight-bold">15 open</span></span>
-                                </div>
-                            </div>
-                            <div class="d-flex">
-                                <button
-                                    class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto"><i
-                                        class="ni ni-bold-right" aria-hidden="true"></i></button>
-                            </div>
-                        </li>
-                        <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
-                            <div class="d-flex align-items-center">
-                                <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
-                                    <i class="ni ni-box-2 text-white opacity-10"></i>
-                                </div>
-                                <div class="d-flex flex-column">
-                                    <h6 class="mb-1 text-dark text-sm">Error logs</h6>
-                                    <span class="text-xs">1 is active, <span class="font-weight-bold">40
-                                            closed</span></span>
+                                    <h6 class="mb-1 text-dark text-sm">Security Logs</h6>
+                                    <span class="text-xs">View recent system access</span>
                                 </div>
                             </div>
                             <div class="d-flex">

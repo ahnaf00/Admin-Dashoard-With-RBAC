@@ -7,7 +7,7 @@
     <link rel="apple-touch-icon" sizes="76x76" href="../../assets/img/apple-icon.png">
     <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
     <title>
-        MY Admin Dashboard
+        {{ $title ?? 'Admin' }} | {{ config('app.name') }}
     </title>
     @include('backend.layouts.inc.style')
 </head>
@@ -26,8 +26,8 @@
 
             @yield('content')
 
-           {{-- Footer --}}
-           @include('backend.layouts.inc.footer')
+            {{-- Footer --}}
+            @include('backend.layouts.inc.footer')
         </div>
     </main>
 
